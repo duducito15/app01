@@ -8,16 +8,15 @@ void main(List<String> args) {
         body: SafeArea(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Icon(
-                Icons.zoom_out,
-                color: Colors.white,
-                size: 50.0,
-              ),
-              Icon(
-                Icons.wifi,
-                color: Colors.redAccent,
+              Container(
+                width: 300.0,
+                height: 300.0,
+                color: Colors.red,
+                child: Image.network(
+                  "https://images.pexels.com/photos/3585088/pexels-photo-3585088.jpeg",
+                  fit: BoxFit.fill,
+                ),
               ),
             ],
           ),
