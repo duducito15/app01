@@ -6,27 +6,24 @@ void main(List<String> args) {
       home: Scaffold(
         backgroundColor: Color(0xffccd5ae),
         body: SafeArea(
-          child: Column(
+          child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.end,
             children: [
               Container(
-                child: Text("Algoritmos 1"),
-                color: Colors.amberAccent,
-                height: 50.0,
-                //alignment: Alignment.center,
+                color: Colors.red,
+                height: 70.0,
+                width: 70.0,
               ),
               Container(
-                child: Text("Fundamentos de programación"),
-                color: Colors.blueAccent,
-                height: 50.0,
-                // alignment: Alignment.center,
+                color: Colors.blue,
+                height: 70.0,
+                width: 70.0,
               ),
               Container(
-                child: Text("Ingenieria de software 2"),
-                color: Colors.redAccent,
-                height: 50.0,
-                //alignment: Alignment.center,
+                color: Colors.yellow,
+                height: 70.0,
+                width: 70.0,
               ),
             ],
           ),
